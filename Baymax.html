@@ -33,6 +33,7 @@
             top: 30px;
             left: 27px;
             transform: rotate(8deg);
+            animation: blink 1s ease-in-out infinite alternate;
         }
         #eye2 {
             transform: rotate(-8deg);
@@ -156,6 +157,12 @@
             top: -810px;
             left: 50px;
             transform: rotate(1deg);
+        }
+        
+        @keyframes blink {
+            40% {
+                transform: rotateX(80deg);
+            }
         }
     </style>
 </head>
